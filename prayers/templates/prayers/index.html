@@ -83,7 +83,7 @@
                     {% for person in people %}
                         <tr>
                             <td>
-                                <a href="{% url 'details' person.id %}"><label style="color: white;"><b>{{ person.name }}</b></label></a> &emsp; &emsp;<label style="color: white;">{{ person.email }}</label>&emsp; &emsp;<label style="color: white;">{{ person.prayer|slice:"0:101" }}</button> 
+                                <a href="{% url 'details' person.id %}"><label style="color: white;"><b>{{ person.name }}</b></label></a> &emsp; &emsp;<label style="color: white;">{{ person.email }}</label>&emsp; &emsp;<label style="color: white;"><i>{{ person.prayer|slice:"0:101" }}</i></label></button> 
                             </td>
                         </tr>
                     {% endfor %}    
